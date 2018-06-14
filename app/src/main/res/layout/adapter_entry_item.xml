@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/entry_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/input_background"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/subtraction"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_subtraction" />
+
+        <EditText
+            android:id="@+id/entry_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/input_background"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/entry_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/subtractionBtn"
+            android:background="@drawable/input_background"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/subtractionBtn"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_subtraction" />
+    </RelativeLayout>
+</LinearLayout>
