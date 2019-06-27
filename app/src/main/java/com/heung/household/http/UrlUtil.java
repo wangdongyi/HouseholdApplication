@@ -10,10 +10,10 @@ import static com.heung.household.base.MainApplication.getUrl;
  */
 
 public class UrlUtil {
-    public static String PhotoUrl = "http://" + getUrl() + ":8080/XYADMINM/uploadFiles/uploadFile/";
+    public static String PhotoUrl = "http://" + getUrl() + ":8080/DDXYADMINM/uploadFiles/uploadFile/";
 
     public static String getAppUrl() {
-        String AppUrl = "http://" + getUrl() + ":8080/XYADMINM/app/";
+        String AppUrl = "http://" + getUrl() + ":8080/DDXYADMINM/app/";
         return AppUrl;
     }
 
